@@ -4,302 +4,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 1</title>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
-        nav {
-            background: rgb(4, 40, 94);
-            margin-bottom: 40px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-        nav li {
-            flex: 1;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            padding: 15px;
-            text-align: center;
-        }
-        nav ul li:hover {
-            background: #084298;
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f5f5f5;
+            padding:20px;
         }
 
-        .s1 {
-            width: 500px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-            margin-bottom: 40px;
-        }
-        .s1 h3 {
-            text-align: center;
-            color: #0d6efd;
-            margin-bottom: 20px;
-        }
-        .s1 ul {
-            list-style: none;
-        }
-        .s1 li {
-            padding: 12px;
-            margin-bottom: 10px;
-            background: #e7f1ff;
-            border-left: 5px solid #0d6efd;
-            border-radius: 5px;
-            transition: .3s;
-        }
-        .s1 li:hover {
-            background: #cfe2ff;
-            transform: translateX(5px);
+        nav{
+            background:#0d6efd;
+            margin-bottom:30px;
         }
 
-        .s2 {
-            width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        }
-        .s2 h3 {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #dee2e6;
-            padding: 12px;
-            text-align: center;
-        }
-        th {
-            background-color: #0d6efd;
-            color: white;
-            font-weight: bold;
-        }
-        tr:nth-child(even) {
-            background-color: #f8f9fa; 
+        nav ul{
+            list-style:none;
+            display:flex;
         }
 
-        .s3 {
-            width: 600px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        nav li{
+            flex:1;
         }
-        .s3 h3 {
-            text-align: center;
-            color: #0d6efd;
-            margin-bottom: 20px;
+
+        nav a{
+            display:block;
+            color:white;
+            text-decoration:none;
+            text-align:center;
+            padding:15px;
         }
-        .s3 form > div {
-            margin-bottom: 15px;
+
+        nav li:hover{
+            background:#084298;
         }
-        .s3 label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
+
+        .box{
+            width:800px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            margin-bottom:30px;
+            border-radius:8px;
+            box-shadow:0 0 8px #ccc;
         }
-        .s3 input[type="text"], .s3 select {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+
+        h3{
+            color:#0d6efd;
+            margin-bottom:15px;
+            text-align:center;
         }
-        .s3 .radio-inline, .s3 .checkbox-inline {
-            display: inline-block;
-            margin-right: 15px;
-            font-weight: normal;
+
+        ul{
+            list-style:none;
         }
-        .s3 .radio-inline input, .s3 .checkbox-inline input {
-            margin-right: 5px;
+
+        ul li{
+            background:#e7f1ff;
+            margin-bottom:8px;
+            padding:10px;
+            border-left:5px solid blue;
         }
-        .s3 .btn-container {
-            text-align: center;
-            margin-top: 20px;
+
+        table{
+            width:100%;
+            border-collapse:collapse;
         }
-        .s3 input[type="submit"], .s3 input[type="reset"] {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            margin: 0 5px;
+
+        table th,
+        table td{
+            border:1px solid #ccc;
+            padding:10px;
+            text-align:center;
         }
-        .s3 input[type="submit"] {
-            background-color: #0d6efd;
+
+        table th{
+            background:#0d6efd;
+            color:white;
         }
-        .s3 input[type="reset"] {
-            background-color: #6c757d;
+
+        table tr:nth-child(even){
+            background:#f8f9fa;
         }
+
+        label{
+            display:block;
+            margin-top:10px;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input[type=text],
+        select{
+            width:100%;
+            padding:8px;
+        }
+
+        .radio label,
+        .check label{
+            display:inline-block;
+            margin-right:15px;
+            font-weight:normal;
+        }
+
+        .btn{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .btn input{
+            padding:10px 20px;
+            border:none;
+            color:white;
+            cursor:pointer;
+        }
+
+        .btn input[type=submit]{
+            background:#0d6efd;
+        }
+
+        .btn input[type=reset]{
+            background:gray;
+        }
+
     </style>
 </head>
+
 <body>
 
-    <?php
-        $menus = [
-            "Trang chủ",
-            "Tin tức",
-            "Liên hệ",
-            "Giới thiệu"
-        ];
+<?php
 
-        $subjects = [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "PHP",
-            "MySQL"
-        ];
+$menu = [
+    "Trang chủ",
+    "Tin tức",
+    "Liên hệ",
+    "Giới thiệu"
+];
 
-        $students = [
-            [
-                "id" => "SV001",
-                "name" => "Nguyễn Văn An",
-                "gender" => "Nam",
-                "class" => "CNTT1"
-            ],
-            [
-                "id" => "SV002",
-                "name" => "Trần Thị Bình",
-                "gender" => "Nữ",
-                "class" => "CNTT2"
-            ],
-            [
-                "id" => "SV003",
-                "name" => "Lê Văn Cường",
-                "gender" => "Nam",
-                "class" => "CNTT1"
-            ],
-            [
-                "id" => "SV004",
-                "name" => "Phạm Thị Dung",
-                "gender" => "Nữ",
-                "class" => "CNTT3"
-            ]
-        ];
+$monHoc = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PHP",
+    "MySQL"
+];
 
-        $faculties = [ "Công nghệ thông tin", "Quản trị kinh doanh", "Kế toán", "Ngôn ngữ Anh" ];
-        $classes = [ "A1"=> "CNTT1", "A2"=> "CNTT2", "A3"=> "CNTT3", "A4"=> "CNTT4" ];
-        $genders = [ "Nam", "Nữ", "Khác" ];
-        $hobbies = [ "LT" => "Lập trình", "DS" => "Đọc sách", "AN" => "Âm nhạc", "DL" => "Du lịch", "TT" => "Thể thao" ];
-    ?>
+$sinhVien = [
+    ["SV001","Nguyễn Văn An","Nam","CNTT1"],
+    ["SV002","Trần Thị Bình","Nữ","CNTT2"],
+    ["SV003","Lê Văn Cường","Nam","CNTT1"],
+    ["SV004","Phạm Thị Dung","Nữ","CNTT3"]
+];
 
-    <nav>
-        <ul>
-            <?php foreach ($menus as $menu) { ?>
-                <li>
-                    <a href="#"><?= $menu ?></a>
-                </li>
-            <?php } ?>
-        </ul>
-    </nav>
+$khoa = [
+    "Công nghệ thông tin",
+    "Quản trị kinh doanh",
+    "Kế toán",
+    "Ngôn ngữ Anh"
+];
 
-    <section class="s1">
-        <h3>Danh sách ngôn ngữ sử dụng trong môn học</h3>
-        <ul>
+$lop = [
+    "CNTT1",
+    "CNTT2",
+    "CNTT3",
+    "CNTT4"
+];
+
+$gioiTinh = [
+    "Nam",
+    "Nữ",
+    "Khác"
+];
+
+$soThich = [
+    "Lập trình",
+    "Đọc sách",
+    "Âm nhạc",
+    "Du lịch",
+    "Thể thao"
+];
+
+?>
+<nav>
+    <ul>
+        <?php
+        foreach($menu as $m){
+            echo "<li><a href='#'>$m</a></li>";
+        }
+        ?>
+    </ul>
+</nav>
+
+<div class="box">
+    <h3>Danh sách ngôn ngữ sử dụng trong môn học</h3>
+
+    <ul>
+        <?php
+        foreach($monHoc as $mh){
+            echo "<li>$mh</li>";
+        }
+        ?>
+    </ul>
+</div>
+
+<div class="box">
+    <h3>Danh sách sinh viên</h3>
+
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Giới tính</th>
+            <th>Lớp</th>
+        </tr>
+
+        <?php
+        $stt = 1;
+
+        foreach($sinhVien as $sv){
+            echo "<tr>";
+            echo "<td>".$stt++."</td>";
+            echo "<td>".$sv[0]."</td>";
+            echo "<td>".$sv[1]."</td>";
+            echo "<td>".$sv[2]."</td>";
+            echo "<td>".$sv[3]."</td>";
+            echo "</tr>";
+        }
+        ?>
+
+    </table>
+</div>
+<div class="box">
+
+    <h3>ĐĂNG KÝ THÔNG TIN SINH VIÊN</h3>
+
+    <form action="#" method="post">
+
+        <label>Họ và tên</label>
+        <input type="text" name="hoten" placeholder="Nhập họ và tên">
+
+
+        <label>Khoa</label>
+        <select name="khoa">
+
+            <option>-- Chọn khoa --</option>
+
             <?php
-                foreach($subjects as $subject){
-                    echo "<li>$subject</li>";
-                }
+            foreach($khoa as $k){
+                echo "<option>$k</option>";
+            }
             ?>
-        </ul>
-    </section>
 
-    <section class="s2">
-        <h3>Danh sách sinh viên</h3>
-        <table>
-            <tr>
-                <th>STT</th>
-                <th>Mã sinh viên</th>
-                <th>Họ và tên</th>
-                <th>Giới tính</th>
-                <th>Lớp</th>
-            </tr>
-            <?php foreach ($students as $index => $student) { ?>
-            <tr>
-                <td><?= $index + 1 ?></td> 
-                <td><?= $student["id"] ?></td>
-                <td><?= $student["name"] ?></td>
-                <td><?= $student["gender"] ?></td>
-                <td><?= $student["class"] ?></td>
-            </tr>
-            <?php } ?>
-        </table>
-    </section>
+        </select>
 
-    <section class="s3">
-        <h3>ĐĂNG KÝ THÔNG TIN SINH VIÊN</h3>
-        <form action="#" method="post">
-            <div>
-                <label>Họ và tên</label>
-                <input type="text" name="fullname" placeholder="Nhập họ và tên">
-            </div>
-            <div>
-                <label>Khoa</label>
-                <select name="faculty">
-                    <option value="">-- Chọn khoa --</option>
-                    <?php foreach ($faculties as $faculty) { ?>
-                        <option><?= $faculty ?></option>
-                    <?php } ?>
-                </select>
-            </div>
-            <div>
-                <label>Lớp</label>
-                <select name="class">
-                    <option value="">-- Chọn lớp --</option>
-                    <?php foreach ($classes as $key => $class) { ?>
-                        <option value="<?= $key ?>"><?= $class ?></option>
-                    <?php } ?>
-                </select>
-            </div>
-            <div>
-                <label>Giới tính</label>
-                <div>
-                    <?php foreach ($genders as $gender) { ?>
-                        <label class="radio-inline">
-                            <input type="radio" name="gender" value="<?= $gender ?>"> <?= $gender ?>
-                        </label>
-                    <?php } ?>
-                </div>
-            </div>
-            <div>
-                <label>Sở thích</label>
-                <div>
-                    <?php foreach ($hobbies as $key => $hobby) { ?>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="hobbies[]" value="<?= $key ?>"> <?= $hobby ?>
-                        </label>
-                    <?php } ?>
-                </div>
-            </div>
-            <div class="btn-container">
-                <input type="submit" value="Đăng ký">
-                <input type="reset" value="Làm mới">
-            </div>
-        </form>
-    </section>
+
+        <label>Lớp</label>
+        <select name="lop">
+
+            <option>-- Chọn lớp --</option>
+
+            <?php
+            foreach($lop as $l){
+                echo "<option>$l</option>";
+            }
+            ?>
+
+        </select>
+
+
+        <label>Giới tính</label>
+
+        <div class="radio">
+
+            <?php
+            foreach($gioiTinh as $gt){
+
+                echo "
+                <label>
+                    <input type='radio' name='gioitinh' value='$gt'>
+                    $gt
+                </label>";
+
+            }
+            ?>
+
+        </div>
+
+
+        <label>Sở thích</label>
+
+        <div class="check">
+
+            <?php
+            foreach($soThich as $st){
+
+                echo "
+                <label>
+                    <input type='checkbox' name='sothich[]' value='$st'>
+                    $st
+                </label>";
+
+            }
+            ?>
+
+        </div>
+
+
+        <div class="btn">
+
+            <input type="submit" value="Đăng ký">
+
+            <input type="reset" value="Làm mới">
+
+        </div>
+
+
+    </form>
+
+</div>
+
 
 </body>
 </html>
