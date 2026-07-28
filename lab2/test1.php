@@ -321,14 +321,11 @@ $soThich = [
             <input type="submit" value="Đăng ký">
 
             <input type="reset" value="Làm mới">
-
         </div>
 
 
     </form>
 
 </div>
-
-
 </body>
 </html>
