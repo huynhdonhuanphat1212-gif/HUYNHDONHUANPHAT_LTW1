@@ -84,7 +84,7 @@
             <?php foreach ($products as $product) { ?>
                 <div class="col-md-6 col-lg-3">
                     <div class="card product-card h-100">
-                        <img src="images/default-product.jpg" class="card-img-top" alt="Hình ảnh sản phẩm">
+                        <img src="images/Fleet Woven 1000.jpg" class="card-img-top" alt="Hình ảnh sản phẩm">
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title"><?= $product["name"] ?></h5>
                             <p class="card-text price-text mb-4 mt-auto">

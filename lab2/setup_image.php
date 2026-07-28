@@ -3,7 +3,6 @@ $dir = __DIR__ . '/images';
 if (!file_exists($dir)) {
     mkdir($dir, 0777, true);
 }
-// Using dummyimage which doesn't require user agent and no SSL issues
 $url = 'http://dummyimage.com/300x200/cccccc/000000.jpg&text=Product';
 $img = file_get_contents($url);
 if ($img) {
